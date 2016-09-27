@@ -1,0 +1,17 @@
+* boost-filesystem-test
+
+This is a simple example for my CMake modularization of boost. It uses =boost.filesystem= and all of its dependencies.
+
+* Run
+
+To test the example on a *nix system (like Linux or Mac OSX), open a shell and run the following commands.
+
+#+begin_src sh
+git clone --recursive https://github.com/Elzair/cmake-boost-filesystem-test.git
+cd cmake-boost-filesystem-test
+mkdir build
+cd build
+cmake ..
+make
+./test-filesystem ../test.cpp # This should print "../test.cpp 329"
+#+end_src sh
