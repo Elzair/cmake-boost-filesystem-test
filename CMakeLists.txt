@@ -4,17 +4,10 @@ else()
   cmake_minimum_required(VERSION 2.8.7 FATAL_ERROR)
 endif()
 
+project(test_filesystem)
+
 add_subdirectory(libs)
 
-project(TestFilesystem)
+add_executable(test_filesystem test.cpp)
 
-include_directories(${BOOST_INCLUDE_DIRS})
-
-add_executable(test-filesystem test.cpp)
-
-message(STATUS "Boost headers: ${BOOST_INCLUDE_DIRS}")
-message(STATUS "Boost libraries: ${BOOST_LIBRARIES}")
-
-target_link_libraries(test-filesystem ${BOOST_LIBRARIES})
-set_property(TARGET test-filesystem PROPERTY CXX_STANDARD 11)
-set_property(TARGET test-filesystem PROPERTY CXX_STANDARD_REQUIRED ON)
+target_link_libraries(test_filesystem boost_predef boost_config boost_assert boost_core boost_system)
