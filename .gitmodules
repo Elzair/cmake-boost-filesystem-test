@@ -13,3 +13,6 @@
 [submodule "libs/system"]
 	path = libs/system
 	url = https://github.com/elzair/system.git
+[submodule "libs/predef"]
+	path = libs/predef
+	url = https://github.com/elzair/predef.git
