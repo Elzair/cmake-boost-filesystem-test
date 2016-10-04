@@ -1,4 +1,4 @@
-* boost-core-test
+* boost-filesystem-test
 
 This is a simple example for my CMake modularization of boost. It uses =Boost.Filesystem= and all of its dependencies.
 
@@ -13,5 +13,5 @@ mkdir build
 cd build
 cmake ..
 make
-./test_filesystem ../test.cpp 
+./test_filesystem ../test.cpp # It should print "size of ../test.cpp is 1021"
 #+end_src sh
