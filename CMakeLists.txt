@@ -17,6 +17,7 @@ target_link_libraries(test_filesystem
   boost::numeric::conversion
   boost::optional
   boost::predef boost::preprocessor
+  boost::range
   boost::smart_ptr boost::static_assert
   boost::throw_exception boost::tuple boost::type_index boost::type_traits boost::typeof
   boost::utility
